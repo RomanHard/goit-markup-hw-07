@@ -16,4 +16,69 @@
   background: var(--two-text-color);
   display: block;
   margin: 0 auto;
+  &:hover {
+    background-color: #188ce8;
+  }
+}
+
+.modal-button {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contact-form-my:focus + .modal-svg {
+  fill: #188ce8;
+}
+
+.text-inputs {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--one-text-color);
+  margin-bottom: 12px;
+}
+.name,
+.tel,
+.mail,
+.coments {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--four-text-color);
+}
+.coment-texteria {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.policy {
+  position: relative;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--four-text-color);
+  text-align: center;
+}
+
+.politic {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: var(--two-text-color);
+}
+
+.contact-form {
+  justify-content: center;
 }

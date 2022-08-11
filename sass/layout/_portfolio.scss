@@ -9,6 +9,14 @@
   border-radius: 4px;
   transition-duration: var(--duration-сss-transition);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    background: var(--two-text-color);
+    color: var(--five-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 .filtres {
   display: flex;
@@ -18,14 +26,6 @@
 
 .portfolio .filtres li:not(:last-child) {
   margin-right: 8px;
-}
-
-.filter-list:focus,
-.filter-list:hover {
-  background: var(--two-text-color);
-  color: var(--five-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list {
@@ -117,16 +117,12 @@
   display: block;
   text-decoration: none;
   transition: box-shadow var(--duration-сss-transition) cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.exemple-link:hover,
-.exemple-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.exemple-link:hover .box-content {
-  transform: translateY(0%);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .box-content {
@@ -143,4 +139,8 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--five-text-color);
+
+  .exemple-link:hover & {
+    transform: translateY(0%);
+  }
 }
