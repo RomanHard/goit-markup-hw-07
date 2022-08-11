@@ -1,0 +1,211 @@
+.hero {
+  padding: 200px 0;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/font.jpg);
+  background-size: cover;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.icon-close {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: var(--five-text-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+}
+
+.contact-form-my:focus,
+.coment-texteria:focus,
+.contact-form-footer:focus {
+  outline: none;
+  border: 1px solid #188ce8;
+}
+
+.modal-svg {
+  position: absolute;
+  top: 45%;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-policy {
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.checkbox-policy:checked + .icon {
+  background-color: var(--two-text-color);
+  background-image: url(../images/check-on.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  border-color: var(--two-text-color);
+}
+
+.modal {
+  display: block;
+  height: 582px;
+  width: 528px;
+  background-color: var(--five-text-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.btn-form {
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.go {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background: var(--two-text-color);
+  color: var(--five-text-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  margin-top: 30px;
+}
+
+.contact-form-my {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-button {
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.modal-btn:hover {
+  background-color: #188ce8;
+}
+
+.contact-form-my:focus + .modal-svg {
+  fill: #188ce8;
+}
+
+.text-inputs {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--one-text-color);
+  margin-bottom: 12px;
+}
+.name,
+.tel,
+.mail,
+.coments {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--four-text-color);
+}
+.coment-texteria {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.policy {
+  position: relative;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--four-text-color);
+  text-align: center;
+}
+
+.politic {
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: var(--two-text-color);
+}
+
+.contact-form {
+  justify-content: center;
+}
+
+.motto {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  width: 696px;
+  color: var(--five-text-color);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+}

@@ -1,0 +1,19 @@
+.modal-btn {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  font-family: inherit;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
+  color: var(--five-text-color);
+  background: var(--two-text-color);
+  display: block;
+  margin: 0 auto;
+}

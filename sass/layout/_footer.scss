@@ -1,0 +1,110 @@
+.color-footer {
+  background: #2f303a;
+  padding: 60px 0;
+}
+
+.contact-number {
+  color: var(--four-text-color);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.contact-list {
+  margin-bottom: 9px;
+  margin-top: 9px;
+}
+
+.conection-me {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--five-text-color);
+}
+
+.conection {
+  width: 206px;
+}
+
+.social-list-link-footer {
+  color: var(--five-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: var(--two-text-color);
+  color: var(--five-text-color);
+}
+
+.margin-stop {
+  margin-right: 0px;
+}
+
+.email-input {
+  margin-left: 93px;
+}
+.email-input-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--five-text-color);
+}
+
+.contact-form-footer {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--six-text-color);
+  color: var(--five-text-color);
+  padding-left: 16px;
+  margin-right: 12px;
+}
+
+.email-input-flex {
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+}
+.go-footer {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background: var(--two-text-color);
+  color: var(--five-text-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  padding-left: 29px;
+  padding-right: 62px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.go-footer-send {
+  position: relative;
+}
+.send {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  right: 15%;
+  top: 25%;
+}

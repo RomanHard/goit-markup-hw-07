@@ -1,0 +1,137 @@
+.menu-link {
+  position: relative;
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  padding: 32px 0;
+  color: var(--one-text-color);
+}
+.menu-link:hover,
+.menu-link:focus,
+.menu-link:current {
+  color: var(--two-text-color);
+}
+
+.menu-link.current::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--two-text-color);
+}
+
+.navigation .current {
+  color: var(--two-text-color);
+}
+
+.navigation,
+.menu,
+.list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header {
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+.page-header-container {
+  display: flex;
+}
+
+.filter-list.current {
+  background: var(--two-text-color);
+  color: var(--five-text-color);
+}
+
+.logo-span {
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--three-text-color);
+}
+
+.logo {
+  font-family: 'Raleway', 'sans-serif';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  color: var(--two-text-color);
+}
+
+.menu-list:not(:last-child) {
+  margin-right: 50px;
+  color: var(--four-text-color);
+}
+
+.menu-list-number:not(:last-child) {
+  margin-right: 30px;
+  color: var(--four-text-color);
+}
+
+.menu-list-number,
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.number-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.icon-mail {
+  fill: currentColor;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.icon-mail-phone {
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.link-number:hover,
+.link-number:focus {
+  transition-property: color;
+  color: var(--two-text-color);
+}
+
+.link-number {
+  transition-duration: var(--duration-сss-transition);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 32px 0;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  margin-left: auto;
+  color: var(--four-text-color);
+}
+
+.link {
+  font-style: normal;
+  color: var(--one-text-color);
+}
