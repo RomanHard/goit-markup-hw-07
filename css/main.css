@@ -725,9 +725,9 @@ body {
 }
 
 .label {
-  font-size: 700;
-  font-weight: 14px;
-  line-height: 0.0228571429px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1428571429;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
