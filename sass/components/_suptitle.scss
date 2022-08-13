@@ -9,9 +9,7 @@
 }
 
 .section__suptitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 700, 43px);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
