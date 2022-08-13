@@ -1,4 +1,4 @@
-.modal-btn {
+.hero__modal--btn {
   transition-duration: var(--duration-сss-transition);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-weight: 700;
@@ -21,7 +21,7 @@
   }
 }
 
-.modal-button {
+.hero__button {
   justify-content: center;
   margin-top: 30px;
 }
