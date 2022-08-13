@@ -166,7 +166,7 @@ body {
   display: flex;
 }
 
-.filter-list.current {
+.filtres__list.current {
   background: var(--two-text-color);
   color: var(--five-text-color);
 }
@@ -744,7 +744,7 @@ body {
   padding-top: 0px;
 }
 
-.my-comands {
+.section--comands {
   background-color: #f5f4fa;
 }
 
@@ -776,7 +776,7 @@ body {
   margin-bottom: 4px;
 }
 
-.filter-list {
+.filtres__list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -790,7 +790,7 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter-list:focus, .filter-list:hover {
+.filtres__list:focus, .filtres__list:hover {
   background: var(--two-text-color);
   color: var(--five-text-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -807,7 +807,7 @@ body {
           justify-content: center;
 }
 
-.portfolio .filtres li:not(:last-child) {
+.section .filtres li:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -830,7 +830,7 @@ body {
           justify-content: space-between;
 }
 
-.list-portfolio {
+.portfolio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -888,7 +888,7 @@ body {
   color: var(--five-text-color);
 }
 
-.list-portfolio .example {
+.portfolio .portfolio__example {
   -ms-flex-preferred-size: calc(33.3333333333% - 30px);
       flex-basis: calc(33.3333333333% - 30px);
   margin-left: 30px;
@@ -899,8 +899,8 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example:focus,
-.example:hover {
+.portfolio__example:focus,
+.portfolio__example:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
